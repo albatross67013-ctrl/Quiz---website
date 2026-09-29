@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz Master</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="quiz-container">
+
+        <!-- START SCREEN -->
+        <div id="start-screen">
+
+            <div class="icon">🎓</div>
+
+            <h1>Quiz Master</h1>
+
+            <p class="subtitle">
+                Test your knowledge and improve your skills!
+            </p>
+
+            <div class="quiz-info">
+
+                <div>
+                    <span>📝</span>
+                    <p>15 Questions</p>
+                </div>
+
+                <div>
+                    <span>⏱️</span>
+                    <p>15 Seconds</p>
+                </div>
+
+            </div>
+
+            <button id="start-btn" class="main-btn">
+                Start Quiz
+            </button>
+
+        </div>
+
+
+        <!-- QUIZ SCREEN -->
+        <div id="quiz-screen" style="display: none;">
+
+            <div class="quiz-header">
+
+                <span id="question-number">
+                    Question 1 of 15
+                </span>
+
+                <span id="timer">
+                    ⏱️ 15
+                </span>
+
+            </div>
+
+
+            <!-- Progress Bar -->
+            <div class="progress-container">
+
+                <div id="progress-bar"></div>
+
+            </div>
+
+
+            <h2 id="question">
+                Question will appear here
+            </h2>
+
+
+            <div id="options">
+
+                <button class="option"></button>
+
+                <button class="option"></button>
+
+                <button class="option"></button>
+
+                <button class="option"></button>
+
+            </div>
+
+
+            <!-- Correct answer message -->
+            <p id="answer-message"></p>
+
+
+            <button id="next-btn" class="main-btn">
+                Next Question
+            </button>
+
+        </div>
+
+
+        <!-- RESULT SCREEN -->
+        <div id="result-screen" style="display: none;">
+
+            <div class="result-icon">
+                🏆
+            </div>
+
+            <h1>Quiz Completed!</h1>
+
+            <p id="result-message"></p>
+
+            <div class="score-circle">
+
+                <span id="score-percentage">
+                    0%
+                </span>
+
+            </div>
+
+            <p id="score">
+                Your Score: 0 / 15
+            </p>
+
+            <button id="restart-btn" class="main-btn">
+                🔄 Restart Quiz
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
